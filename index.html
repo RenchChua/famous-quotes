@@ -4,29 +4,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <link type="text/stylesheet" rel="stylesheet" href="./style.css">
-  <link type="text/stylesheet" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <title>Famous quote</title>
 </head>
 
 <body>
+  <div class="container">
+
   <div class="title-container">
-    <h3>Want a famous quote?</h3>
+    <h3 class="header">Random Famous Quotes</h3>
   </div>
-  <form class="input-form" action="index.html" method="post">
-    <input type="button" value="click" id="quote-now">
-  </form>
-  <div class="result-container">
-    <div class="content">
-      <p id="quote-content"></p>
+
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 text-center">
+      <p></p>
+      <input class="glyphicon button-text" type="button" value="Get new quote" id="quote-now">
     </div>
-    <div class="person">
-      <p id="quote-person"></p>
+  </div>
+
+  <div class="empty">
+
+  </div>
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 text-center">
+      <div class="result-container">
+        <p id="result"></p>
+      </div>
     </div>
+  </div>
   </div>
 </body>
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"> </script>
+<script src="https:/code.jquery.com/jquery-2.2.4.min.js"> </script>
 <script type="text/javascript" src="./script.js"></script>
 </html>

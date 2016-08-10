@@ -5,6 +5,10 @@ $(function(){
   $button.on('click', function(){
     $.ajax({
       // put the necessary code here to hit the api
+      url: "https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous",
+      headers: {'X-Mashape-Key': 'C7j4txDHaumsh7866c0HXxrtFGc6p1EOvvYjsnb3xAPyiGJjVQ'},
+      type: 'GET', // The HTTP Method, can be GET POST PUT DELETE etc
+      dataType: 'json',
     }).always(alwaysFunction)
       .success(successFunction)
       .fail(failFunction);
@@ -17,6 +21,7 @@ $(function(){
   function successFunction(data){
     // put the action to show the quote and the person who said the quote in the $result
     // we can have this do some changes to the styling to (eg make the container for the result appear only when success)
+    $("#result").html(data.quote);
   }
 
   function failFunction(jqXHR, textStatus, errorThrown){
