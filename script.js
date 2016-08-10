@@ -4,7 +4,9 @@ $(document).ready(function() {
   $content = $('#quote-content'); // this selects the result <p>
 
 $button.on('click', function() {
-  console.log('click click click');
+
+  console.log('click');
+
   $.ajax({
     url: 'https://andruxnet-random-famous-quotes.p.mashape.com/?cat=famous',
 
@@ -12,18 +14,19 @@ $button.on('click', function() {
     data: {
       cat: "famous"
     },
-    // datatype: 'json',
+
     success: function(data) {alert(data);
     $('#quote-content').html(data);
     },
+
     beforeSend: function(xhr) {
       xhr.setRequestHeader('X-Mashape-Key', 'fKNj4SkY1lmshrYv3plHC6jXCNmdp1YPo3XjsnujdpbI1rHohn');
     }
     })
     .fail(function(request, textStatus, errorThrown) {
       $result.html(request.status + ' ' + textStatus + ' ' + errorThrown);
-
     });
+    
   });
 
 });
