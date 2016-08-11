@@ -4,22 +4,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link type="text/stylesheet" rel="stylesheet" href="./style.css">
+  <link type="text/stylesheet" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <title>Famous quote</title>
 </head>
 
 <body>
   <div class="title-container">
-    <h3>Famous quote</h3>
+    <h3>Want a famous quote?</h3>
   </div>
-  <input type="button" value="click" id="quote-now">
+  <form class="input-form" action="index.html" method="post">
+    <input type="button" value="click" id="quote-now">
+  </form>
   <div class="result-container">
-    <p id="result"></p>
+    <div class="content">
+      <p id="quote-content"></p>
+    </div>
+    <div class="person">
+      <p id="quote-person"></p>
+    </div>
   </div>
 </body>
-<script src="https:/code.jquery.com/jquery-2.2.4.min.js"> </script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"> </script>
 <script type="text/javascript" src="./script.js"></script>
 </html>
