@@ -17,6 +17,7 @@ $(function(){
   function successFunction(data){
     // put the action to show the quote and the person who said the quote in the $result
     // we can have this do some changes to the styling to (eg make the container for the result appear only when success)
+    console.log(data);
   }
 
   function failFunction(jqXHR, textStatus, errorThrown){
