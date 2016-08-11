@@ -1,0 +1,31 @@
+body {
+  background-image: url(./assets/back.jpg);
+}
+
+.header {
+  margin-top: 10%;
+  font-size: 300%;
+  font-family: cursive;
+  text-align: center;
+  text-shadow: 3px 3px 8px silver;
+}
+
+.button-text {
+  padding-bottom: 2%;
+  text-align: center;
+  text-shadow: 3px 3px 8px blue;
+  width:20%;
+}
+
+#result {
+  font-family: fantasy;
+  font-size: 150%;
+}
+
+.empty {
+  margin-top: 5%;
+}
+
+.bkgound {
+  background-size: cover;
+}

@@ -33,6 +33,9 @@ $button.on('click', function() {
 
   });
 
+  var conflict = 'making conflict';
+  conflict.concat('resolved?');
+
 });
 
 
