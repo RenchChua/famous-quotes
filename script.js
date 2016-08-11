@@ -10,7 +10,7 @@ $(function(){
       .fail(failFunction);
 
   function alwaysFunction(){
-    console.log("yay!");
+    console.log("wonderful!");
     // do we need this? if not take it out
   }
 
